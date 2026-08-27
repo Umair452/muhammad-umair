@@ -1937,7 +1937,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   z-index: 1; /* creates a stacking context so the slide layer stays behind the text */
   overflow: hidden;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 40px;
   /* border-radius: 4px; */
   text-decoration: none;
   background-color: #FFC107; /* yellow */
@@ -1992,4 +1992,108 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     display: none; /* keeps its column's width so heading stays centered */
     pointer-events: none;
   }
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.hero-section--small  { min-height: 40vh; }
+.hero-section--medium { min-height: 60vh; }
+.hero-section--large  { min-height: 90vh; }
+
+.hero-section__media {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+}
+
+.hero-section__media::after {
+  /* subtle overlay so text stays readable over any image - tweak/remove as you like */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.25));
+}
+
+.hero-section__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-section__card {
+  position: relative;
+  z-index: 1;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 440px;
+  padding: 32px;
+  background: none; /* card never has a background */
+  color: #fff;
+}
+
+.hero-section__heading {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 1.2;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+
+.hero-section__subheading {
+  margin: 0;
+  font-size: 16px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+
+.hero-section__button {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ---------- Desktop card position (9 options) ---------- */
+.hero-section__card--desktop-top-left      { align-self: start;  justify-self: start;  align-items: flex-start; text-align: left; }
+.hero-section__card--desktop-center-left   { align-self: center; justify-self: start;  align-items: flex-start; text-align: left; }
+.hero-section__card--desktop-bottom-left   { align-self: end;    justify-self: start;  align-items: flex-start; text-align: left; }
+.hero-section__card--desktop-top-center    { align-self: start;  justify-self: center; align-items: center;     text-align: center; }
+.hero-section__card--desktop-center-center { align-self: center; justify-self: center; align-items: center;     text-align: center; }
+.hero-section__card--desktop-bottom-center { align-self: end;    justify-self: center; align-items: center;     text-align: center; }
+.hero-section__card--desktop-top-right     { align-self: start;  justify-self: end;    align-items: flex-end;   text-align: right; }
+.hero-section__card--desktop-center-right  { align-self: center; justify-self: end;    align-items: flex-end;   text-align: right; }
+.hero-section__card--desktop-bottom-right  { align-self: end;    justify-self: end;    align-items: flex-end;   text-align: right; }
+
+/* ---------- Mobile layout (4 options) ---------- */
+@media screen and (max-width: 749px) {
+  .hero-section__card {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    justify-self: stretch;
+    align-self: stretch;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    justify-content: space-between; /* default: text top, button bottom */
+  }
+
+  .hero-section__card--mobile-top    { justify-content: flex-start; gap: 20px; }
+  .hero-section__card--mobile-center { justify-content: center; gap: 20px; }
+  .hero-section__card--mobile-bottom { justify-content: flex-end; gap: 20px; }
+  .hero-section__card--mobile-split  { justify-content: space-between; }
 }
