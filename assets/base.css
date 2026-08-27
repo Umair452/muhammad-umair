@@ -1933,14 +1933,37 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 }
 
 .store-banner__btn {
+  position: relative;
+  z-index: 1; /* creates a stacking context so the slide layer stays behind the text */
+  overflow: hidden;
   display: inline-block;
   padding: 10px 20px;
-  border: 1px solid currentColor;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   text-decoration: none;
-  color: inherit;
+  background-color: #FFC107; /* yellow */
+  color: #000; /* black text */
   font-size: 14px;
+  font-weight: 600;
   white-space: nowrap;
+  transition: color 0.4s ease-in-out;
+}
+
+.store-banner__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000; /* black slide */
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1; /* stays behind the button's text within its own stacking context */
+}
+
+.store-banner__btn:hover {
+  color: #fff;
+}
+
+.store-banner__btn:hover::before {
+  transform: translateX(0);
 }
 
 /* Mobile layout */
