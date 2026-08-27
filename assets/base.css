@@ -1890,7 +1890,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding: 16px 24px;
+  padding: 6px 24px;
   gap: 12px;
   background:#f1eded;
 }
@@ -1941,7 +1941,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   padding: 10px 40px;
   /* border-radius: 4px; */
   text-decoration: none;
-  background-color: #FFC107; /* yellow */
+  background-color:rgb(255,245,68); /* yellow */
   color: #000; /* black text */
   font-size: 14px;
   font-weight: 600;
@@ -2066,7 +2066,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   padding: 10px 40px;
   /* border-radius: 4px; */
   text-decoration: none;
-  background-color: #FFC107; /* yellow */
+  background-color: rgb(255,245,68); /* yellow */
   color: #000; /* black text */
   font-size: 14px;
   font-weight: 600;
