@@ -2030,7 +2030,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .hero-section__card {
   position: relative;
   z-index: 1;
-  background: #fff !important;
+  background: #fff;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   display: flex;
