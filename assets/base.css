@@ -1885,3 +1885,88 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     margin-top: calc(var(--header-height) * var(--transparent-header-offset-boolean) * -1);
   }
 }
+
+.store-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 12px;
+}
+
+.store-banner__hamburger {
+  display: none; /* hidden on desktop */
+  cursor: pointer;
+}
+
+.store-banner__hamburger-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.store-banner__heading {
+  grid-column: 1;
+  text-align: left;
+}
+
+.store-banner__store-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.store-banner__slogan {
+  grid-column: 2;
+  text-align: center;
+}
+
+.store-banner__slogan p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.store-banner__button {
+  grid-column: 3;
+  text-align: right;
+}
+
+.store-banner__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 749px) {
+  .store-banner {
+    grid-template-columns: 40px 1fr 40px;
+  }
+
+  .store-banner__hamburger {
+    display: flex;
+    grid-column: 1;
+    align-items: center;
+  }
+
+  .store-banner__heading {
+    grid-column: 2;
+    text-align: center;
+  }
+
+  .store-banner__slogan {
+    display: none;
+  }
+
+  .store-banner__button {
+    grid-column: 3;
+    visibility: hidden; /* keeps its column's width so heading stays centered */
+    pointer-events: none;
+  }
+}
