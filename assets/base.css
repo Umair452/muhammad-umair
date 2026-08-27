@@ -2030,6 +2030,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .hero-section__card {
   position: relative;
   z-index: 1;
+  background: #fff;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   display: flex;
@@ -2107,6 +2108,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     width: 100%;
+    background: none;
     max-width: none;
     height: 100%;
     justify-self: stretch;
@@ -2115,6 +2117,9 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
     text-align: center;
     padding: 24px;
     justify-content: space-between; /* default: text top, button bottom */
+  }
+  .hero-section__text {
+    background: #fff;
   }
 
   .hero-section__card--mobile-top    { justify-content: flex-start; gap: 20px; }
