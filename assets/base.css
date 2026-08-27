@@ -1892,6 +1892,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
   align-items: center;
   padding: 16px 24px;
   gap: 12px;
+  background:#f1eded;
 }
 
 .store-banner__hamburger {
@@ -2102,7 +2103,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .hero-section__card--desktop-center-right  { align-self: center; justify-self: end;    align-items: flex-end;   text-align: right; }
 .hero-section__card--desktop-bottom-right  { align-self: end;    justify-self: end;    align-items: flex-end;   text-align: right; }
 .hero-bottom-text{
-  background: rgb(221, 218, 218);
+  background: #f1eded;
   color: #000;
 }
 /* ---------- Mobile layout (4 options) ---------- */
