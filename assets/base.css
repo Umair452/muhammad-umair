@@ -2055,14 +2055,37 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 }
 
 .hero-section__button {
+  position: relative;
+  z-index: 1; /* creates a stacking context so the slide layer stays behind the text */
+  overflow: hidden;
   display: inline-block;
-  padding: 10px 22px;
-  background: #fff;
-  color: #000;
+  padding: 10px 40px;
+  /* border-radius: 4px; */
   text-decoration: none;
-  border-radius: 4px;
+  background-color: #FFC107; /* yellow */
+  color: #000; /* black text */
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.4s ease-in-out;
+}
+
+.hero-section__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000; /* black slide */
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: -1; /* stays behind the button's text within its own stacking context */
+}
+
+.hero-section__button:hover {
+  color: #fff;
+}
+
+.hero-section__button:hover::before {
+  transform: translateX(0);
 }
 
 /* ---------- Desktop card position (9 options) ---------- */
