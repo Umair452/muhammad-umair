@@ -1966,7 +1966,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 
   .store-banner__button {
     grid-column: 3;
-    visibility: hidden; /* keeps its column's width so heading stays centered */
+    display: none; /* keeps its column's width so heading stays centered */
     pointer-events: none;
   }
 }
