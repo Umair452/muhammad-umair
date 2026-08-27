@@ -218,10 +218,25 @@
         "button_label": "CHOOSE GIFT",
         "button_link": "#"
       }
+    },
+    "hero_section_mHYJPV": {
+      "type": "hero-section",
+      "name": "Hero Section",
+      "settings": {
+        "background_image": "shopify://shop_images/Frame.svg",
+        "size": "medium",
+        "heading": "The Gift Guide",
+        "subheading": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+        "button_label": "Shop Now",
+        "button_link": "#",
+        "desktop_position": "bottom-left",
+        "mobile_position": "split"
+      }
     }
   },
   "order": [
     "product_list_fa6P9H",
-    "store_banner_w7JDMx"
+    "store_banner_w7JDMx",
+    "hero_section_mHYJPV"
   ]
 }
