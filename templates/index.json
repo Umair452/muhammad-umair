@@ -208,9 +208,20 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "store_banner_w7JDMx": {
+      "type": "store-banner",
+      "name": "Store Banner",
+      "settings": {
+        "store_name": "Tisso Vison",
+        "slogan": "Find the ideal gift for your loved ones",
+        "button_label": "Shop Now",
+        "button_link": "#"
+      }
     }
   },
   "order": [
-    "product_list_fa6P9H"
+    "product_list_fa6P9H",
+    "store_banner_w7JDMx"
   ]
 }
