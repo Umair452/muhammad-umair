@@ -30,6 +30,9 @@
       </a>
     {%- endif -%}
   </div>
+  <div class="hero-bottom-text">
+  <h3>{{ section.settings.hero_bottom_text }}</h3>
+  </div>
 </div>
 
 {% schema %}
@@ -70,6 +73,11 @@
       "id": "button_label",
       "label": "Button label",
       "default": "Shop Now"
+    },
+    {
+        "type": "text",
+        "id": "hero_bottom_text",
+        "label": "Bottom Text"
     },
     {
       "type": "url",

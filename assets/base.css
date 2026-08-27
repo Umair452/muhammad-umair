@@ -2101,7 +2101,10 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .hero-section__card--desktop-top-right     { align-self: start;  justify-self: end;    align-items: flex-end;   text-align: right; }
 .hero-section__card--desktop-center-right  { align-self: center; justify-self: end;    align-items: flex-end;   text-align: right; }
 .hero-section__card--desktop-bottom-right  { align-self: end;    justify-self: end;    align-items: flex-end;   text-align: right; }
-
+.hero-bottom-text{
+  background: rgb(221, 218, 218);
+  color: #000;
+}
 /* ---------- Mobile layout (4 options) ---------- */
 
 @media screen and (min-width: 749px) {
