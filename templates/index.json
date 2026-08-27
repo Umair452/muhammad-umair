@@ -213,9 +213,9 @@
       "type": "store-banner",
       "name": "Store Banner",
       "settings": {
-        "store_name": "Tisso Vison",
+        "store_name": "TISSO VISION",
         "slogan": "Find the ideal gift for your loved ones",
-        "button_label": "Shop Now",
+        "button_label": "CHOOSE GIFT",
         "button_link": "#"
       }
     }
