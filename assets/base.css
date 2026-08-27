@@ -2043,6 +2043,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 
 .hero-section__heading {
   margin: 0 0 8px;
+  color: #000;
   font-size: 32px;
   line-height: 1.2;
   text-shadow: 0 1px 3px rgba(0,0,0,0.35);
@@ -2050,6 +2051,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 
 .hero-section__subheading {
   margin: 0;
+  color: #000;
   font-size: 16px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.35);
 }
