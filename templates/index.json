@@ -224,7 +224,7 @@
       "name": "Hero Section",
       "settings": {
         "background_image": "shopify://shop_images/Frame.svg",
-        "size": "medium",
+        "size": "large",
         "heading": "The Gift Guide",
         "subheading": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
         "button_label": "Shop Now",
