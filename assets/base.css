@@ -2030,7 +2030,7 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .hero-section__card {
   position: relative;
   z-index: 1;
-  background: #fff;
+  
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   display: flex;
@@ -2103,6 +2103,12 @@ main > .shopify-section:first-child .section:not(.disable-section-top-offset) {
 .hero-section__card--desktop-bottom-right  { align-self: end;    justify-self: end;    align-items: flex-end;   text-align: right; }
 
 /* ---------- Mobile layout (4 options) ---------- */
+
+@media screen and (min-width: 749px) {
+  .hero-section__card {
+    background: #fff;
+  }
+}
 @media screen and (max-width: 749px) {
   .hero-section__card {
     grid-column: 1 / -1;
