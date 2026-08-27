@@ -233,11 +233,26 @@
         "desktop_position": "bottom-left",
         "mobile_position": "split"
       }
+    },
+    "collection_section_Kqq9eV": {
+      "type": "collection-section",
+      "name": "Featured collection popup",
+      "settings": {
+        "collection": "tisso-vision-in-the-wild",
+        "heading": "Tisso Vision In The Wild",
+        "products_to_show": 6,
+        "columns_desktop": "3",
+        "columns_mobile": "2",
+        "show_title_price": false,
+        "background_color": "#ececec",
+        "card_background": "#ffffff"
+      }
     }
   },
   "order": [
     "product_list_fa6P9H",
     "store_banner_w7JDMx",
-    "hero_section_mHYJPV"
+    "hero_section_mHYJPV",
+    "collection_section_Kqq9eV"
   ]
 }
