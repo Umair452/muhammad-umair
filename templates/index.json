@@ -237,40 +237,67 @@
     "cutom_products_htGYkk": {
       "type": "cutom-products",
       "blocks": {
+        "product_kp9Q9q": {
+          "type": "product",
+          "settings": {
+            "product": "black-leather-bag",
+            "pos_x": 63,
+            "pos_y": 59
+          }
+        },
         "product_9xhbDJ": {
           "type": "product",
           "settings": {
             "product": "blue-silk-tuxedo",
-            "pos_x": 49,
+            "pos_x": 83,
             "pos_y": 48
           }
         },
-        "product_TgcdFb": {
+        "product_YB8bxT": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "chequered-red-shirt",
             "pos_x": 80,
             "pos_y": 15
           }
         },
-        "product_DnPzgg": {
+        "product_hcCNtK": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "classic-leather-jacket",
+            "pos_x": 80,
+            "pos_y": 15
+          }
+        },
+        "product_Y8gyjT": {
+          "type": "product",
+          "settings": {
+            "product": "classic-varsity-top",
+            "pos_x": 80,
+            "pos_y": 15
+          }
+        },
+        "product_kncUhn": {
+          "type": "product",
+          "settings": {
+            "product": "dark-denim-top",
             "pos_x": 80,
             "pos_y": 15
           }
         }
       },
       "block_order": [
+        "product_kp9Q9q",
         "product_9xhbDJ",
-        "product_TgcdFb",
-        "product_DnPzgg"
+        "product_YB8bxT",
+        "product_hcCNtK",
+        "product_Y8gyjT",
+        "product_kncUhn"
       ],
       "name": "Shoppable Lookbook",
       "settings": {
-        "heading": "Tisso Vision in the wild",
-        "heading_alignment": "center",
+        "heading": "TISSO VISION IN THE WILD",
+        "heading_alignment": "left",
         "container_width": 1400,
         "padding_top": 40,
         "padding_bottom": 40
