@@ -234,20 +234,46 @@
         "mobile_position": "split"
       }
     },
-    "collection_section_Kqq9eV": {
-      "type": "collection-section",
-      "name": "Featured collection popup",
+    "cutom_products_htGYkk": {
+      "type": "cutom-products",
+      "blocks": {
+        "product_9xhbDJ": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "pos_x": 80,
+            "pos_y": 15
+          }
+        },
+        "product_TgcdFb": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "pos_x": 80,
+            "pos_y": 15
+          }
+        },
+        "product_DnPzgg": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "pos_x": 80,
+            "pos_y": 15
+          }
+        }
+      },
+      "block_order": [
+        "product_9xhbDJ",
+        "product_TgcdFb",
+        "product_DnPzgg"
+      ],
+      "name": "Shoppable Lookbook",
       "settings": {
-        "collection": "tisso-vision-in-the-wild",
-        "heading": "Tisso Vision In The Wild",
-        "products_to_show": 6,
-        "columns_desktop": "3",
-        "columns_mobile": "2",
-        "show_title_price": false,
-        "plus_button_position": "top_right",
-        "plus_button_offset": 20,
-        "background_color": "#ececec",
-        "card_background": "#ffffff"
+        "heading": "Tisso Vision in the wild",
+        "heading_alignment": "center",
+        "container_width": 1400,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     }
   },
@@ -255,6 +281,6 @@
     "product_list_fa6P9H",
     "store_banner_w7JDMx",
     "hero_section_mHYJPV",
-    "collection_section_Kqq9eV"
+    "cutom_products_htGYkk"
   ]
 }
