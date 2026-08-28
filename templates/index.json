@@ -244,6 +244,8 @@
         "columns_desktop": "3",
         "columns_mobile": "2",
         "show_title_price": false,
+        "plus_button_position": "top_right",
+        "plus_button_offset": 20,
         "background_color": "#ececec",
         "card_background": "#ffffff"
       }
